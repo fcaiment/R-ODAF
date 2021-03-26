@@ -19,7 +19,7 @@ require("edgeR")
 	SampleKeyFile <- "samplekeyTEST.csv" #This comma delimited file contains at least 2 columns: NAME (sample names identical to the column names of sampleData) and Compound (needs to identify to which group the sample belongs -> ExperimentalGroup & ControlGroup)
 
 # Specify which groups need to be compared 
-	Samp4compare<- c("PIR") # Experimental group, needs to correspond with the SampleKeyFile
+	Samp4compare<- c("PIR") # Experimental group, needs to correspond with the SampleKeyFile. Several condition can be tested c("test1","test2), with the corresponding control
 	Cont4compare<- c("Vehicle") # Control group, needs to correspond with the SampleKeyFile
 	DESIGN<- "Compound"	#Column name samplekeyTEST.csv which defines the groups to be compared
 
@@ -52,15 +52,15 @@ DESeqDesign <- read.delim(SampleKeyFile, stringsAsFactors=FALSE, sep=",", header
 NORM_TYPE<-paste0(analysisID, "_DESeq2_", Platform)
 print(NORM_TYPE)
 
-plotdir<- paste(outputdir, "/plots/", sep="")
-if(!dir.exists(plotdir)) {dir.create(plotdir)}
-barplot.dir<- paste(plotdir, "/barplot_genes/", sep="")
-if(!dir.exists(barplot.dir)) {dir.create(barplot.dir)}
-
 # First data clean-up: replace NA & remove samples with total readcount < threshold
 sampleData[ is.na(sampleData) ] <- 0 
 sampleData<- sampleData[,(colSums(sampleData)> minCoverage)]
 DESeqDesign <- DESeqDesign[rownames(DESeqDesign) %in% colnames(sampleData),]
+
+# Generate a PCA plot to exclude the post-processing outliers replicates
+# vst <- vst(dds)
+# plotPCA(vst,intgroup=c(DESIGN))
+# exclude outlier from the dataset 
 
 ##########
 # DESeq2 #
