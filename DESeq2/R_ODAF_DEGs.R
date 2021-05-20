@@ -107,7 +107,7 @@ colnames(Filter) <- c("Low","quantile","spike")
 				CountsPass<-c(CountsPass, Check)
 		}
 		
-	if ( sum(CountsPass) > 1 ) {Filter[gene,1] <- 1 }	else { Filter[gene,1] <- 0 }
+	if ( sum(CountsPass) > 0 ) {Filter[gene,1] <- 1 }	else { Filter[gene,1] <- 0 }
 			
 		}	
 
