@@ -1,20 +1,11 @@
 ##############################################################################
-#  app.R – R-ODAF DESeq2 pipeline                                             #
-#          * All filter thresholds (CPM, FDR, etc.) are now fixed values      #
+#  app.R – R-ODAF DESeq2 pipeline                                            #
+#          * All filter thresholds (CPM, FDR, etc.) are now fixed values     #
 #          * Users cannot modify thresholds in the UI                        #
 #          * Top / Avg gene panels use a RANGE slider only                   #
 #          * Hovering shows sample names only in the Top‐gene plot           #
 #          * Uses normalized counts for expression plots                     #
 #          * Wrapped long gene IDs in Top gene facet labels                  #
-#          * Rotated x‐axis labels 90° in Avg expression plot  
-# ADD option to validate a public dataset first and understand the tool
-# ADD option to ensure if the user wants to analyse TempoSeq or RNAseq since 
-# current pipeline builds on RNAseq. For tempoSeq, CPM changes to 1 million instead of 
-# 5 million. 5 million wipes everything away.
-# Add Option to run analysis for multiple conditions,,,,
-# (Not only case vs controls but also control vs low, control vs high) and....
-# have a panel/drop down option to choose analysis
-# Add option to add reordering data, controls first, low dose followed by subsequent dose
 ##############################################################################
 
 library(shiny)
