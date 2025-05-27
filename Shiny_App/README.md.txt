@@ -17,6 +17,8 @@ It enables fixed-parameter differential gene expression analysis with built-in v
   - Heatmaps, top gene, and average expression plots
 - Exportable results and summary reports
 
+## Features for TempO-Seq will be added soon
+
 ## How to Run
 
 1. Open `app.R` in RStudio
@@ -37,6 +39,4 @@ It enables fixed-parameter differential gene expression analysis with built-in v
 
 Please cite the original R-ODAF publication:
 
-> Verheijen, M. C., Meier, M. J., Asensio, J. O., Gant, T. W., Tong, W., Yauk, C. L., & Caiment, F. (2022).  
-> **R-ODAF: Omics data analysis framework for regulatory application.**  
-> *Regulatory Toxicology and Pharmacology, 131*, 105143.
+Verheijen, M. C., Meier, M. J., Asensio, J. O., Gant, T. W., Tong, W., Yauk, C. L., & Caiment, F. (2022). R-ODAF: Omics data analysis framework for regulatory application. Regulatory Toxicology and Pharmacology, 131, 105143.
