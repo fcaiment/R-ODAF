@@ -1,0 +1,18 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "R-ODAF-Shiny",
+  "description": "Shiny-based interface for the R-ODAF DESeq2 pipeline ensuring reproducible transcriptomics analysis.",
+  "identifier": "https://r-odaf.nl",
+  "license": "MIT",
+  "version": "0.9.0",
+  "programmingLanguage": "R",
+  "codeRepository": "https://github.com/fcaiment/R-ODAF/tree/shiny-version/Shiny_App",
+  "author": [
+    {"givenName": "Saad", "familyName": "Lodhi", "affiliation": "Maastricht University"},
+    {"givenName": "Marcha", "familyName": "Verheijen"},
+    {"givenName": "Theo M.", "familyName": "de Kok"},
+    {"givenName": "Florian", "familyName": "Caiment"},
+    {"givenName": "Danyel", "familyName": "Jennen"}
+  ]
+}
