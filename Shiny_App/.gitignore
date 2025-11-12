@@ -1,0 +1,15 @@
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj
+.Rapp.history
+
+# renv (package environment)
+renv/library/
+renv/staging/
+
+# OS-generated
+.DS_Store
+Thumbs.db
