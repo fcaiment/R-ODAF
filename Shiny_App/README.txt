@@ -1,42 +1,88 @@
-# Shiny Interface for R-ODAF DEG Pipeline
+R-ODAF-Shiny: Graphical Interface for the R-ODAF DEG Pipeline
 
-This Shiny app provides a graphical interface for the R-ODAF DESeq2 pipeline.  
-It enables fixed-parameter differential gene expression analysis with built-in visualization and reporting.
+This Shiny app provides a graphical interface for the R-ODAF DESeq2 pipeline.
+It enables fixed-parameter differential gene expression (DEG) analysis with built-in visualization and reporting.
+All analyses follow R-ODAF’s regulatory criteria for reproducibility and traceability.
 
-## Features
+Live Deployment
 
-- Input support for RNA-seq count matrices and sample metadata
-- Fixed filters for regulatory consistency:
-  - Minimum coverage: 5 million reads/sample
-  - CPM threshold: 1
-  - FDR cutoff: 0.01
-  - PCA outlier variance threshold: 20%
-- Interactive DEG exploration:
-  - PCA before/after outlier removal
-  - Final DEG tables with export
-  - Heatmaps, top gene, and average expression plots
-- Exportable results and summary reports
+The containerized app is available at:
+https://r-odaf.nl
 
-## Features for TempO-Seq will be added soon
+Uploads are processed in-session and discarded automatically after session end.
 
-## How to Run
+⚙️ Key Features
 
-1. Open `app.R` in RStudio
-2. Click **“Run App”**
-3. Upload:
-   - A count matrix (genes × samples)
-   - A metadata file (samples × attributes)
-4. Set design column and control/case labels
-5. Click **“Run analysis”**
+RNA-seq counts + metadata input
 
-## Notes
+Filters for regulatory consistency:
 
-- All thresholds are hardcoded to ensure reproducibility and reduce user-induced variability.
-- Designed for RNA-seq input. (Tempo-Seq support under consideration)
-- No changes were made to the core R-ODAF pipeline logic.
+Minimum coverage: 5M reads/sample
 
-## Citation
+CPM threshold: 1
 
-Please cite the original R-ODAF publication:
+FDR cutoff: 0.01
 
-Verheijen, M. C., Meier, M. J., Asensio, J. O., Gant, T. W., Tong, W., Yauk, C. L., & Caiment, F. (2022). R-ODAF: Omics data analysis framework for regulatory application. Regulatory Toxicology and Pharmacology, 131, 105143.
+PCA outlier variance threshold: 20%
+
+Interactive exploration:
+
+PCA (before/after outlier removal)
+
+Final DEG tables (exportable)
+
+Heatmaps, top-gene and average-expression plots
+
+Exportable results and summary reports
+
+TempO-Seq module is planned.
+
+Run Locally (short version)
+install.packages("renv", repos = "https://cloud.r-project.org")
+renv::restore()        # restore exact package versions
+shiny::runApp(".")     # launch the app
+
+
+Inputs expected
+
+counts: genes × samples (CSV/TSV)
+
+metadata: samples × attributes (must include a condition column)
+
+Reproducibility
+
+This repository includes:
+
+renv.lock – snapshot of all package versions
+
+renv/activate.R – automatic environment activation
+
+docs/sessionInfo.txt – R/session details
+
+Fixed analysis thresholds to ensure identical results across runs
+
+See also:
+
+docs/PRIVACY.md – data handling
+
+docs/REPRODUCIBILITY.md – fixed parameters and validation notes
+
+Citation
+
+Please cite the R-ODAF framework and this Shiny implementation:
+
+
+R-ODAF-Shiny (this work)
+Saad Lodhi, Marcha Verheijen, Theo M. de Kok, Florian Caiment, Danyel Jennen (2025).
+R-ODAF-Shiny: A Graphical Interface for Reproducible Transcriptomics Analysis.
+(Manuscript in preparation, Maastricht University).
+
+R-ODAF (framework)
+Verheijen M.C., Meier M.J., Asensio J.O., Gant T.W., Tong W., Yauk C.L., Caiment F. (2022).
+R-ODAF: Omics Data Analysis Framework for Regulatory Application.
+Regulatory Toxicology and Pharmacology, 131, 105143. https://doi.org/10.1016/j.yrtph.2022.105143
+
+Credits
+
+Developed by Saad Lodhi under supervision of Marcha Verheijen, Theo M. de Kok, Florian Caiment, and Danyel Jennen.
+Part of the R-ODAF at Maastricht University.
