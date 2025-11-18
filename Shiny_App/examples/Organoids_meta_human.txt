@@ -1,0 +1,55 @@
+ScanName	FactorValuecompound	FactorValuedose	Unitconcentrationunit	FactorValuetime
+C1	none	0	percent	24
+C19	none	0	percent	48
+C2	none	0	percent	24
+C20	none	0	percent	48
+C21	none	0	percent	48
+C3	none	0	percent	24
+C37	none	0	percent	72
+C38	none	0	percent	72
+C39	none	0	percent	72
+C22	dimethyl sulfoxide	0.1	percent	48
+C23	dimethyl sulfoxide	0.1	percent	48
+C24	dimethyl sulfoxide	0.1	percent	48
+C4	dimethyl sulfoxide	0.1	percent	24
+C40	dimethyl sulfoxide	0.1	percent	72
+C41	dimethyl sulfoxide	0.1	percent	72
+C42	dimethyl sulfoxide	0.1	percent	72
+C25	doxorubicin	1	micromolar	48
+C26	doxorubicin	1	micromolar	48
+C27	doxorubicin	1	micromolar	48
+C43	doxorubicin	1	micromolar	72
+C44	doxorubicin	1	micromolar	72
+C45	doxorubicin	1	micromolar	72
+C7	doxorubicin	1	micromolar	24
+C8	doxorubicin	1	micromolar	24
+C9	doxorubicin	1	micromolar	24
+C10	doxorubicin	10	micromolar	24
+C11	doxorubicin	10	micromolar	24
+C12	doxorubicin	10	micromolar	24
+C28	doxorubicin	10	micromolar	48
+C29	doxorubicin	10	micromolar	48
+C30	doxorubicin	10	micromolar	48
+C46	doxorubicin	10	micromolar	72
+C47	doxorubicin	10	micromolar	72
+C48	doxorubicin	10	micromolar	72
+C13	doxorubicin	30	micromolar	24
+C14	doxorubicin	30	micromolar	24
+C15	doxorubicin	30	micromolar	24
+C31	doxorubicin	30	micromolar	48
+C32	doxorubicin	30	micromolar	48
+C33	doxorubicin	30	micromolar	48
+C49	doxorubicin	30	micromolar	72
+C50	doxorubicin	30	micromolar	72
+C51	doxorubicin	30	micromolar	72
+C16	doxorubicin	60	micromolar	24
+C17	doxorubicin	60	micromolar	24
+C18	doxorubicin	60	micromolar	24
+C34	doxorubicin	60	micromolar	48
+C35	doxorubicin	60	micromolar	48
+C36	doxorubicin	60	micromolar	48
+C52	doxorubicin	60	micromolar	72
+C53	doxorubicin	60	micromolar	72
+C54	doxorubicin	60	micromolar	72
+C5	dimethyl sulfoxide	0.1	percent	24
+C6	dimethyl sulfoxide	0.1	percent	24
