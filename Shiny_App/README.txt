@@ -11,7 +11,7 @@ https://r-odaf.nl
 
 Uploads are processed in-session and discarded automatically after session end.
 
-⚙️ Key Features
+Key Features
 
 RNA-seq counts + metadata input
 
