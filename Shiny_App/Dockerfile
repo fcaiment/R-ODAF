@@ -19,25 +19,3 @@ RUN	rm -rf /srv/shiny-server/*
 WORKDIR	/srv/shiny-server/
 
 COPY ./ ./
-
-
-
-
-
-
-
-
-
-#    cmake \
-#    libproj-dev \
-#    libicu-dev \
-#    libcurl4-openssl-dev \
-#    libmysqlclient-dev \
-
-
-#    libmysqlclient-dev \ 
-#   
-
-
-# RUN R -e 'install.packages("BiocManager", dependencies=TRUE)'
-# RUN R -e 'BiocManager::install("PCAtools")'
